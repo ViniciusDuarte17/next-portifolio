@@ -1,5 +1,6 @@
-import styled from "styled-components";
+import styled  from "styled-components";
 import Image from "next/image";
+import Link from "next/link";
 
 
 export const HomeMain = styled.main`
@@ -11,6 +12,32 @@ export const HomeMain = styled.main`
     align-items: center;
 `
 
+export const ContentPresentation = styled.section`
+    display: flex;
+    flex-direction: column;
+`
+
+export const SectionToAvatar = styled.section`
+    display: flex;
+    flex-direction: column;
+`
+
+export const SectionContact = styled.section`
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+
+    @media only screen and (max-width:660px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 20em;
+        margin-bottom: 3%;
+    }
+`
+
 export const ContainerSection = styled.section`
     width: 85%;
     display: grid;
@@ -18,21 +45,40 @@ export const ContainerSection = styled.section`
     grid-template-columns: repeat(3, 33%);
     margin-top: 2.25em;
 
-    /* @media only screen and (max-width: 770px) {
-        grid-template-columns: 1fr;
-    } */
+    @media only screen and (max-width:928px) {
+       
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    @media only screen and (max-width:660px) {
+     
+        grid-template-columns: repeat(1, 100%);
+        align-items: center;
+        justify-content: center;
+
+    }
 
     /* layout padrão */
-    /* @media only screen and (min-width: 771px) {
+    @media only screen and (min-width: 929px) {
         grid-template-columns: repeat(3, 33%);
-    } */
-  
+    }
+
+    // Mudando a ordem do html
+
+    @media (max-width: 660px) {
+        ${ContentPresentation} {
+      order: 2;
+     }
+     ${SectionToAvatar} {
+      order: 1;
+     }
+     ${SectionContact} {
+      order: 3;
+     }
+    }
+
 `
 
-export const ContentPresentation = styled.section`
-    display: flex;
-    flex-direction: column;
-`
 
 export const Information = styled.div`
     padding-top: 10%;
@@ -97,19 +143,17 @@ export const ContentListIcons = styled.div`
     }
 `
 
-export const FigureAvatar = styled.figure`
-    position: absolute;
-    background: rgba(123, 74, 226, 0.33);
-    top: 7em;
-    border-radius: 999px;
-    width: 265px;
-    height: 260px;
-`
-export const FigureFigma = styled.figure`
-   position: absolute;
-   top: 17.4em;
-`
+export const AvatarFigma = styled.figure`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(/AvatarAndIcons.png);
+    background-size: cover;
+    width: 20em;
+    height: 20em;
 
+`
 
 export const ImageTypeScript = styled(Image)`
    position: absolute;
@@ -118,13 +162,56 @@ export const ImageTypeScript = styled(Image)`
    margin: 0;
 `
 
-export const FigureTypeScript = styled.figure`
-    position: absolute;
-    right: 43vw;
-    top: 15em;
-    background: #090E16;
-    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.5);
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
+export const SpanButtonCV = styled.p`
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: rgba(123, 74, 226, 0.5);
+`
+
+
+// export const SectionContact = styled.section`
+//     display: flex;
+//     flex-direction: column;
+//     align-items: end;
+
+
+//     @media only screen and (max-width:660px) {
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+//         justify-content: space-between;
+//         width: 20em;
+//     }
+// `
+
+export const LinkToWhatsapp = styled(Link) `
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(123, 74, 226, 0.5);
+`
+
+export const JoinImgToText = styled.div`
+    display: flex;
+
+
+`
+
+export const JoinLogoWhatsLink = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(123, 74, 226, 0.5);
+    border-radius: 16px;
+    width: 196px;
+    height: 44px;  
+    gap: 8px;
 `

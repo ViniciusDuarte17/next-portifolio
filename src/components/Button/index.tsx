@@ -1,16 +1,19 @@
+import { ReactNode } from "react";
+import * as S from "./styled";
+
 
 interface Props {
-    text: string,
+    children: ReactNode,
     onClick: () => void
 }
 
-function CustomButton ({text, onClick}: Props) {
+function CustomButton ({children, onClick}: Props) {
 
     return(
         <div>
-            <button onClick={ onClick }>
-                {text}
-            </button>
+            <S.Button onClick={ onClick }>
+                {children}
+            </S.Button>
         </div>
     )
 }

@@ -4,14 +4,18 @@ import * as S from "../styles/Home";
 import Header from "../components/Header";
 import Link from "next/link";
 import Image from "next/image";
+import CustomButton from "../components/Button";
 
 const Home: NextPage = () => {
+
+
   return (
     <S.HomeMain>
       <Header />
 
       <S.ContainerSection>
         <S.ContentPresentation>
+          {/* Seção 1 => Saudações */}
           <S.Information>
             <h4>👋 Saudações!</h4>
 
@@ -22,7 +26,7 @@ const Home: NextPage = () => {
           </S.Information>
 
           <S.ContentTextFrontEnd>
-            <h6>Front-end developer- UI designer</h6>
+            <h6>Full-stack developer- UI designer</h6>
           </S.ContentTextFrontEnd>
 
           <S.ContentListIcons>
@@ -60,22 +64,41 @@ const Home: NextPage = () => {
             </ul>
           </S.ContentListIcons>
         </S.ContentPresentation>
-        <section>
-          <S.FigureAvatar>
-             <Image width={270} height={270} src="/avatar.png" alt="logo-profile" />
-          </S.FigureAvatar>
+     {/* Seção 2 => Avatar  */}
+        <S.SectionToAvatar>
+      
+          <S.AvatarFigma>
+            <br></br>
+            <br></br>
+            <Image width={250} height={250} src="/Avatar.png" alt="avatar profile" />
+          </S.AvatarFigma>
 
-          <S.FigureFigma>
-            <Image width={90} height={90} src="/Group.svg" alt="figma" />
-          </S.FigureFigma>
+        </S.SectionToAvatar>
 
-          <S.FigureTypeScript>
-            <S.ImageTypeScript width={25} height={25} src="/TypeScript.svg"  alt="Logo typescript"/>
-          </S.FigureTypeScript>
-        </section>
+        <S.SectionContact>
+          {/* Seção 3 => Informações do CV e botão para falar comigo no whats */}
+          <S.JoinImgToText>
+            <CustomButton onClick={() => console.log('clicou')} >
+              <S.SpanButtonCV>
+                Baixar CV
+              </S.SpanButtonCV>
+            </CustomButton>
 
-        <section>section 3</section>
+            <figure>
+              <Image width={24} height={24} src="ArrowLineDown.svg" alt="icons download" />
+            </figure>
+          </S.JoinImgToText>
+
+          <S.JoinLogoWhatsLink>
+            <Image width={24} height={24} src="WhatsappLogo.svg" alt="icons download" />
+
+            <S.LinkToWhatsapp href={'/'}>
+              Vamos conversar
+            </S.LinkToWhatsapp>
+          </S.JoinLogoWhatsLink>
+        </S.SectionContact>
       </S.ContainerSection>
+
     </S.HomeMain>
   );
 };
