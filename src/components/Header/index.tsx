@@ -7,7 +7,7 @@ function Header() {
   return (
     <S.ContainerHeader>
       <figure>
-        <Image width={25} height={25} src="/logo.png" alt="logo" />
+        <Image width={25} height={25} src="/Logo.png" alt="logo" />
       </figure>
       <nav>
         <S.Ul>
