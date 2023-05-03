@@ -70,7 +70,7 @@ const Home: NextPage = () => {
           <S.AvatarFigma>
             <br></br>
             <br></br>
-            <Image width={250} height={250} src="/Avatar.png" alt="avatar profile" />
+            <Image width={250} height={250} src="/avatar.png" alt="avatar profile" />
           </S.AvatarFigma>
 
         </S.SectionToAvatar>
