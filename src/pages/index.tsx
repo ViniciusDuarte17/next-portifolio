@@ -114,10 +114,7 @@ const Home: NextPage = () => {
           </S.JoinLogoWhatsLink>
         </S.SectionContact>
       </S.ContainerSection>
-
-      <section >
-        sobre mim
-      </section>
+      
     </S.HomeMain>
   );
 };
