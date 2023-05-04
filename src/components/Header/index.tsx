@@ -12,7 +12,6 @@ type Props = {
 function Header({ screen }: Props) {
   const [open, setOpen] = useState<boolean>(false);
 
-  console.log(open);
   return (
     <S.ContainerHeader>
       <figure>
@@ -27,7 +26,7 @@ function Header({ screen }: Props) {
                 <Image
                   width={34}
                   height={34}
-                  src={"/Menufechar.svg"}
+                  src={"/MenuFechar.svg"}
                   alt="menu para abrir"
                 />
               ) : (
