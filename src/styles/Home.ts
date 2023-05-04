@@ -83,7 +83,6 @@ export const ContainerSection = styled.section`
 
 `
 
-
 export const Information = styled.div`
     padding-top: 10%;
     padding-bottom: 4%;
@@ -201,8 +200,6 @@ export const LinkToWhatsapp = styled(Link) `
 
 export const JoinImgToText = styled.div`
     display: flex;
-
-
 `
 
 export const JoinLogoWhatsLink = styled.div`
