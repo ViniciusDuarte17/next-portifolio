@@ -3,6 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 
+type Props = {
+    screen: number
+}
+
 export const HomeMain = styled.main`
     width: 100%;
     min-height: 100vh;
@@ -127,15 +131,26 @@ export const ContentTextFrontEnd = styled.div`
     
 `
 
-export const ContentListIcons = styled.div`
+export const ContentListIcons = styled.div<Props>`
     ul{
        list-style: none;
-       display: flex;
+       display: ${({screen}) => (screen > 500 && 'flex' )};
        width: 8.25em;
        height: 2.25em;
        justify-content: space-between;
        align-items: center;
        margin-top: 1.25em;
+
+
+       @media only screen and (max-width:520px) {
+        position: absolute;
+        display: flex;
+        width: 7.35em;
+        top: 13%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+   }
+
     }
 
     ul li {
@@ -173,21 +188,6 @@ export const SpanButtonCV = styled.p`
     color: rgba(123, 74, 226, 0.5);
 `
 
-
-// export const SectionContact = styled.section`
-//     display: flex;
-//     flex-direction: column;
-//     align-items: end;
-
-
-//     @media only screen and (max-width:660px) {
-//         display: flex;
-//         flex-direction: row;
-//         align-items: center;
-//         justify-content: space-between;
-//         width: 20em;
-//     }
-// `
 
 export const LinkToWhatsapp = styled(Link) `
     text-decoration: none;

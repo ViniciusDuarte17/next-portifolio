@@ -1,4 +1,3 @@
-import Link from "next/link";
 import styled from "styled-components";
 
 
@@ -15,28 +14,25 @@ export const ContainerHeader = styled.header`
     margin-top: 1.5rem;
 `
 
+export const PositionButton = styled.div`
 
-export const Ul = styled.ul`
-    list-style: none;
-    display: flex;
-    gap: 24px;
+    position: absolute;
+    right: 12%;
 `
 
-export const Li = styled.li`
-    margin-right: 32px;
-`
+export const NavBarMobile = styled.div`
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   align-items: end;
+   padding-top: 5%;
+   padding-right: 3%;
+   width: 15rem;
+   height: 52vh;
+   right: 6vh;
+   top:11.01vh;
+   border-radius: 10%;
+   z-index: 300;
 
-export const CustomStyleLink = styled(Link)`
-    text-decoration: none;
-    color:#fff;
-    opacity: 50%;
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    font-weight: normal;
-    letter-spacing: 0;
-
-    &:focus, :hover {
-        color:#7B4AE2;
-        opacity: 75%;
-    }
+  background: linear-gradient(to bottom,#000, rgba(123, 74, 226, 0.0), rgba(123, 74, 226, 0.1));
 `

@@ -1,41 +1,53 @@
 import Image from "next/image";
 
-
 import * as S from "./styled";
+import { NavBar } from "../NavBar";
+import CustomButton from "../Button";
+import { useState } from "react";
 
-function Header() {
+type Props = {
+  screen: number;
+};
+
+function Header({ screen }: Props) {
+  const [open, setOpen] = useState<boolean>(false);
+
+  console.log(open);
   return (
     <S.ContainerHeader>
       <figure>
         <Image width={25} height={25} src="/Logo.png" alt="logo" />
       </figure>
-      <nav>
-        <S.Ul>
-          <li>
-            <S.CustomStyleLink href={"/"}>
-              Home
-            </S.CustomStyleLink>
-          </li>
 
-          <li>
-            <S.CustomStyleLink href={"/Sobre mim"}>
-              Sobre mim
-            </S.CustomStyleLink>
-          </li>
-
-          <li>
-            <S.CustomStyleLink href={"/Portfolio"}>
-              Portfólio
-            </S.CustomStyleLink>
-          </li>
-
-          <S.Li>
-            <S.CustomStyleLink href={"/Contato"}>
-              Contato
-            </S.CustomStyleLink>
-          </S.Li>
-        </S.Ul>
-      </nav>
+      {screen < 591 && (
+        <S.PositionButton>
+          <CustomButton onClick={() => setOpen(!open)}>
+            <span>
+              {open ? (
+                <Image
+                  width={34}
+                  height={34}
+                  src={"/Menufechar.svg"}
+                  alt="menu para abrir"
+                />
+              ) : (
+                <Image
+                  width={34}
+                  height={34}
+                  src={"/menu3.svg"}
+                  alt="menu para abrir"
+                />
+              )}
+            </span>
+          </CustomButton>
+        </S.PositionButton>
+      )}
+      <NavBar screen={screen} />
+      {open && screen < 591 ?
+       <S.NavBarMobile>
+         <NavBar screen={screen * 3} flexDirection={'column'}/>
+       </S.NavBarMobile> : 
+       null}
     </S.ContainerHeader>
   );
 }

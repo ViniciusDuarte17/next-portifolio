@@ -5,13 +5,29 @@ import Header from "../components/Header";
 import Link from "next/link";
 import Image from "next/image";
 import CustomButton from "../components/Button";
+import { useEffect, useState } from "react";
 
 const Home: NextPage = () => {
+  const [screen, setScreen] = useState<number>(0)
 
+  function handleResize(entries: ResizeObserverEntry[]) {
+    for (let entry of entries) {
+      const cr = entry.contentRect;
+      setScreen(cr.width);
+    }
+  }
+
+  useEffect(() => {
+    const observer = new ResizeObserver(handleResize);
+    observer.observe(document.body);
+    return () => {
+      observer.unobserve(document.body);
+    };
+  }, []);
 
   return (
     <S.HomeMain>
-      <Header />
+      <Header screen={screen} />
 
       <S.ContainerSection>
         <S.ContentPresentation>
@@ -29,7 +45,7 @@ const Home: NextPage = () => {
             <h6>Full-stack developer- UI designer</h6>
           </S.ContentTextFrontEnd>
 
-          <S.ContentListIcons>
+          <S.ContentListIcons screen={screen}>
             <ul>
               <li>
                 <Link href={"/"}>
