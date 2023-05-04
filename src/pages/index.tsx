@@ -115,6 +115,9 @@ const Home: NextPage = () => {
         </S.SectionContact>
       </S.ContainerSection>
 
+      <section >
+        sobre mim
+      </section>
     </S.HomeMain>
   );
 };

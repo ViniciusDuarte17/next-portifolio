@@ -14,7 +14,7 @@ export const NavBar = ({ screen, flexDirection }: Props) => {
         </li>
 
         <li>
-          <S.CustomStyleLink href={"/Sobre mim"}>Sobre mim</S.CustomStyleLink>
+          <S.CustomStyleLink href={"/About"}>Sobre mim</S.CustomStyleLink>
         </li>
 
         <li>
@@ -22,7 +22,7 @@ export const NavBar = ({ screen, flexDirection }: Props) => {
         </li>
 
         <S.Li>
-          <S.CustomStyleLink href={"/Contato"}>Contato</S.CustomStyleLink>
+          <S.CustomStyleLink href={"/Contact"}>Contato</S.CustomStyleLink>
         </S.Li>
       </S.Ul>
     </nav>
