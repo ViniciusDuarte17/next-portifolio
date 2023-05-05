@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import CustomButton from "../components/Button";
 import { useEffect, useState } from "react";
+import { Experience } from "../components/Experience";
 
 const Home: NextPage = () => {
   const [screen, setScreen] = useState<number>(0)
@@ -114,6 +115,8 @@ const Home: NextPage = () => {
           </S.JoinLogoWhatsLink>
         </S.SectionContact>
       </S.ContainerSection>
+
+      <Experience screen={screen}/>
       
     </S.HomeMain>
   );
