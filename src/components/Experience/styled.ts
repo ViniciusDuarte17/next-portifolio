@@ -29,6 +29,7 @@ export const SectionRow = styled.section`
     @media only screen and (max-width:660px) {
         flex-direction: column;
         height: 100vh;
+        margin-bottom: 5%;
     }
 `
 
@@ -52,6 +53,34 @@ export const DescriptionSection = styled.section`
     background: rgba(123, 74, 226, 0.1);
     border-radius: 16px;
     margin-top: 2%;
+
+
+    div {
+        width: 205px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+    }
+   
+    span {
+        font-family: Raleway;
+        font-style: Regular;
+        font-size: 16px;
+        line-height: 19px;
+        line-height: 100%;
+        color: #7B4AE2;
+    }
+
+    h3 {
+        font-family: Raleway;
+        font-style: Bold;
+        font-size: 32px;
+        line-height: 38px;
+        line-height: 100%;
+        color: #7B4AE2;
+    }
+
     @media only screen and (max-width:940px) {
         width: 80%;
     }
