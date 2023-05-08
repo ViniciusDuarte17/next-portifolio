@@ -7,6 +7,7 @@ import Image from "next/image";
 import CustomButton from "../components/Button";
 import { useEffect, useState } from "react";
 import { Experience } from "../components/Experience";
+import { About } from "../components/About";
 
 const Home: NextPage = () => {
   const [screen, setScreen] = useState<number>(0)
@@ -117,6 +118,8 @@ const Home: NextPage = () => {
       </S.ContainerSection>
 
       <Experience screen={screen}/>
+
+      <About screen={screen}/>
       
     </S.HomeMain>
   );
