@@ -24,8 +24,9 @@ export const Container = styled.div`
 
 export const Img = styled(Image)`
   border-radius: 100%;
-
+  margin-top: -15em;
   @media (max-width: 814px) {
+    margin-top: 0em;
     width: 200px;
     height: 200px;
   }
@@ -51,7 +52,8 @@ export const SectionDescription = styled.section`
     background: rgba(123, 74, 226, 0.1);
     border-radius: 16px;
     color: #7b4ae2;
-    margin-left: 10%;
+    margin-top: 5%;
+    margin-left: 20%;
 
     @media (max-width: 814px) {
       margin-left: 4%;
@@ -66,7 +68,7 @@ export const SectionDescription = styled.section`
     font-size: 48px;
     line-height: 56px;
     color: #ffffff;
-    margin-left: 10%;
+    margin-left: 20%;
 
     @media (max-width: 814px) {
       margin-left: 4%;
@@ -81,7 +83,7 @@ export const SectionDescription = styled.section`
     line-height: 27.5px;
     color: rgba(255, 255, 255, 0.5);
     transform: rotate(-0.03deg);
-    margin-left: 10%;
+    margin-left: 20%;
     
 
     @media (max-width: 814px) {
