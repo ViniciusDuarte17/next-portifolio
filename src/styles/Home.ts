@@ -102,13 +102,29 @@ export const Information = styled.div`
         font-weight: bold;
         font-size: 18px;
         line-height: 23px;
+        line-height: 100%;
+
+        @media (max-width: 514px){
+            width: 122px;
+            height: 32px;
+            font-size: 14px;
+            line-height: 16px;
+            line-height: 100%;
+        }
     }
 
     h1 {
         font-family: Raleway;
+        font-style: ExtraBold;
         font-weight: 800; 
         font-size: 3.25em;
         line-height: 1.25em;
+
+        @media (max-width: 514px){
+            font-size: 48px;
+            line-height: 56px;
+            line-height: 100%;
+        }
     }
 
 `
