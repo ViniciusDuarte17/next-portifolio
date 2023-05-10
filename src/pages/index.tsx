@@ -8,6 +8,7 @@ import CustomButton from "../components/Button";
 import { useEffect, useState } from "react";
 import { Experience } from "../components/Experience";
 import { About } from "../components/About";
+import { Portfolio } from "../components/Portfolio";
 
 const Home: NextPage = () => {
   const [screen, setScreen] = useState<number>(0)
@@ -120,6 +121,8 @@ const Home: NextPage = () => {
       <Experience screen={screen}/>
 
       <About screen={screen}/>
+
+      <Portfolio screen={screen} />
       
     </S.HomeMain>
   );

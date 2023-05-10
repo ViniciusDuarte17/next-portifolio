@@ -8,7 +8,7 @@ export const About = ({ screen }: Props) => {
   return (
     <S.Container>
       <section>
-        <S.Img width={354} height={354} src={"/vinicius.png"} alt="logo" />
+        <S.Img width={320} height={320} src={"/vinicius.png"} alt="logo" />
       </section>
 
       <S.SectionDescription>
