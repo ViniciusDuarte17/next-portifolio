@@ -88,7 +88,6 @@ export const SectionPortfolio = styled.section`
             font-size: 24px;
             line-height: 28px;
             line-height: 100%;
-           
         }
     }
 `

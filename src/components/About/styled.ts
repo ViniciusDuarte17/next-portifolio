@@ -49,6 +49,7 @@ export const SectionDescription = styled.section`
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
+    line-height: 100%;
     background: rgba(123, 74, 226, 0.1);
     border-radius: 16px;
     color: #7b4ae2;
@@ -57,7 +58,16 @@ export const SectionDescription = styled.section`
 
     @media (max-width: 814px) {
       margin-left: 4%;
+     
     }
+    @media (max-width: 514px) {
+      width: 113px;
+      height: 32px;
+      font-size: 14px;
+      line-height: 16px;
+      line-height: 100%;
+    }
+
   }
 
   h1 {
@@ -72,6 +82,13 @@ export const SectionDescription = styled.section`
 
     @media (max-width: 814px) {
       margin-left: 4%;
+    }
+
+    @media (max-width: 514px) {
+      height: 55px;
+      font-size: 24px;
+      line-height: 28px;
+      line-height: 100%;
     }
   }
 
@@ -90,6 +107,14 @@ export const SectionDescription = styled.section`
       width: 95%;
       margin-left: 4%;
       padding-bottom: 5%;
+    }
+
+    @media (max-width: 514px) {
+      font-family: Raleway;
+      font-style: Regular;
+      font-size: 14px;
+      line-height: 25px;
+      line-height: 152%;
     }
   }
 `;
