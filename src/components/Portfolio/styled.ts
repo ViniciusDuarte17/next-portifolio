@@ -21,7 +21,6 @@ export const SectionDirectionRow = styled.section<Props>`
     @media (max-width: 890px) {
         display: flex;
         flex-direction: column;
-        
     } 
 `
 
@@ -43,6 +42,21 @@ export const ContentDiv = styled.div<Props>`
         line-height: 23px;
         line-height: 100%;
         color: rgba(123, 74, 226, 0.5);
+
+        @media (max-width: 514px){
+            font-size: 14px;
+            line-height: 16px;
+            line-height: 100%;
+        }
+    }
+
+    @media (max-width: 514px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 116px;
+        height: 40px;
+        
     }
 `
 
@@ -94,11 +108,15 @@ export const SectionPortfolio = styled.section`
 
 
 export const SectionIcon = styled.section`
+    width: 22.2em;
     display: flex;
     gap: 16px;
     
     @media (max-width: 538px) {
+        position: absolute;
         display: flex;
-        overflow: hidden;
+        margin-left: -20px;
+        margin-top: 5em;
+       
     }
 `
