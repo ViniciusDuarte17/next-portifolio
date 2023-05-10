@@ -117,6 +117,5 @@ export const SectionIcon = styled.section`
         display: flex;
         margin-left: -20px;
         margin-top: 5em;
-       
     }
 `
