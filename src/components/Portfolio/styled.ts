@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { motion } from "framer-motion";
+
 interface Props {
   width?: string;
   colorBorder?: string;
@@ -8,6 +10,7 @@ interface Props {
 
 export const Container = styled.section`
   display: flex;
+  flex-direction: column;
   width: 85%;
   min-height: 200px;
 `;
@@ -117,3 +120,36 @@ export const SectionIcon = styled.section`
     margin-top: 5em;
   }
 `;
+
+
+export const Projects = styled.section`
+   display: grid;
+   grid-template-columns:  1fr 1fr  1fr;
+
+   @media (max-width: 1120px) {
+    grid-template-columns:  1fr 1fr;
+   }
+
+   @media (max-width: 864px) {
+    grid-template-columns: 1fr; 
+   }
+`
+
+// Estilização para corresel
+
+export const ContainerCarousel = styled.div`
+    max-width: 300px;
+`
+export const Carousel = styled(motion.div)`
+    cursor: grab;
+    overflow: hidden;
+`
+export const InnerCarousel = styled(motion.div)`
+    display: flex;
+`
+
+export const CarouselItem = styled(motion.div)`
+    min-height: 300px;
+    min-width: 350px;
+    padding:14px;
+`
