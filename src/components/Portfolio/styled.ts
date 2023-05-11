@@ -108,11 +108,11 @@ export const SectionPortfolio = styled.section`
 
 
 export const SectionIcon = styled.section`
-    width: 22.2em;
     display: flex;
     gap: 16px;
     
     @media (max-width: 538px) {
+        width: 22.2em;
         position: absolute;
         display: flex;
         margin-left: -20px;
