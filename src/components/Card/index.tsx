@@ -18,7 +18,7 @@ export const Card = () => {
 
         <div>
             <iframe src="https://ifood-gold.vercel.app" >
-                conteudo
+             
             </iframe>
         </div>
     </S.Container>
