@@ -13,7 +13,7 @@
         "iframeUrl": "https://the-movie-eight.vercel.app/",
         "gitHubUrl": "https://github.com/ViniciusDuarte17/the_movie",
         "url": "https://the-movie-eight.vercel.app/",
-        "descripiton":""
+        "descripiton":"Este projeto foi desenvolvido em resposta a um case proposto pela Labenu, com o objetivo de obter minha certificação em desenvolvimento front-end."
     },
     {
         "id": 3,
@@ -29,7 +29,7 @@
         "iframeUrl": "https://alura-track-azure.vercel.app",
         "gitHubUrl": "https://github.com/ViniciusDuarte17/Alura-track",
         "url": "https://alura-track-azure.vercel.app",
-        "descripiton":""
+        "descripiton":"Esse projeto foi desenvolvido durante o meu curso de Vue.js na Alura."
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "iframeUrl": "https://resilient-pasca-e2d432.netlify.app",
         "gitHubUrl": "https://github.com/ViniciusDuarte17/Desafio-Coopers",
         "url": "https://resilient-pasca-e2d432.netlify.app",
-        "descripiton":""
+        "descripiton":"Este projeto foi cuidadosamente desenvolvido como parte do processo seletivo que estava participando na renomada empresa Copybase."
     },
     {
         "id": 6,
@@ -45,6 +45,6 @@
         "iframeUrl": "https://desafio-front-end-neo-app.vercel.app/",
         "gitHubUrl": "https://github.com/ViniciusDuarte17/desafioFrontEnd-NeoApp",
         "url": "https://desafio-front-end-neo-app.vercel.app/",
-        "descripiton":""
+        "descripiton":"Este projeto foi um desafio técnico para a empresa NeoApp. Implementei um recurso de listagem paginada de histórias em quadrinhos (HQs), que permite uma navegação fácil entre as diferentes páginas de resultados."
     }
 ]
