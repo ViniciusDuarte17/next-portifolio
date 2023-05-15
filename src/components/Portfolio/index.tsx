@@ -60,17 +60,23 @@ export const Portfolio = ({ screen }: Props) => {
       </S.SectionDirectionRow>
 
       <S.Projects>
-         {/* {screen > 620 ? (
+        {screen > 620 ? (
           <>
             {project.map((projec) => (
               <>
-                <Card key={projec.id} />
+                <Card
+                  key={projec.id}
+                  title={projec.title}
+                  description={projec.descripiton}
+                  linkProject={projec.iframeUrl}
+                  linkGitHub={projec.gitHubUrl}
+                />
               </>
             ))}
           </>
         ) : (
           <MobileProject />
-        )}  */} <Card />
+        )}
       </S.Projects>
     </S.Container>
   );

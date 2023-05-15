@@ -2,15 +2,23 @@ import * as S from "./styled";
 
 import { GithubLogo, GlobeHemisphereWest } from "phosphor-react";
 
-export const Card = () => {
+
+interface Props {
+  title: string;
+  description: string;
+  linkProject: string;
+  linkGitHub: string;
+}
+
+export const Card = ({title, description,linkProject,linkGitHub}: Props) => {
+  
   return (
     <S.Container>
       <S.Description>
-        <h2>LabeFood</h2>
+        <h2>{title}</h2>
 
         <p>
-          Este projeto foi desenvolvido como parte do bootcamp ministrado pela
-          Labenu
+         {description}
         </p>
       </S.Description>
 
@@ -32,14 +40,14 @@ export const Card = () => {
 
       <S.TumbnailContainer>
         <S.Tumbnail>
-          <iframe src="https://the-movie-eight.vercel.app/"></iframe>
+          <iframe src={linkProject}></iframe>
         </S.Tumbnail>
       </S.TumbnailContainer>
       <footer>
-          <a href="">
+          <a href={linkGitHub}>
             <GithubLogo size={32} weight="fill" />  
           </a>
-          <a href="">
+          <a href={linkProject}>
             <GlobeHemisphereWest size={32} weight="fill" />
           </a>
         </footer>

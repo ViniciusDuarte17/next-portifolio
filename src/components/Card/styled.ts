@@ -109,6 +109,7 @@ export const Tumbnail = styled.div`
   -webkit-transform: scale(0.25);
   -webkit-transform-origin: 0 0;
 
+
   ::after {
     content: "";
     display: block;
@@ -122,7 +123,6 @@ export const Tumbnail = styled.div`
   iframe {
     width: 1235px;
     height: 685px;
-    /* background-color: #5965e0; */
   }
 
   @media (max-width: 420px) {
