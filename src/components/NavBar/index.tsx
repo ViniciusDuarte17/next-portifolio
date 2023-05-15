@@ -10,7 +10,7 @@ export const NavBar = ({ screen, flexDirection }: Props) => {
     <nav>
       <S.Ul screen={screen} flexDirection={flexDirection}>
         <li>
-          <S.CustomStyleLink href={"/"}>Home</S.CustomStyleLink>
+          <S.CustomStyleLink href={"#Home"}>Home</S.CustomStyleLink>
         </li>
 
         <li>
