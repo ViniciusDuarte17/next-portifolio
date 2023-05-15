@@ -44,10 +44,10 @@ export const Card = ({title, description,linkProject,linkGitHub}: Props) => {
         </S.Tumbnail>
       </S.TumbnailContainer>
       <footer>
-          <a href={linkGitHub}>
+          <a href={linkGitHub} target="_blank">
             <GithubLogo size={32} weight="fill" />  
           </a>
-          <a href={linkProject}>
+          <a href={linkProject} target="_blank">
             <GlobeHemisphereWest size={32} weight="fill" />
           </a>
         </footer>
