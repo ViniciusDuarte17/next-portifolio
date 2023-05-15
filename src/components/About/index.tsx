@@ -11,7 +11,7 @@ export const About = ({ screen }: Props) => {
         <S.Img width={320} height={320} src={"/vinicius.png"} alt="logo" />
       </section>
 
-      <S.SectionDescription>
+      <S.SectionDescription id="About">
         <span>🧐 Sobre mim</span>
 
         <h1>
