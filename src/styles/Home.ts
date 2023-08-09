@@ -4,6 +4,8 @@ import Link from "next/link";
 
 type Props = {
   screen: number;
+  margin?: string;
+  padding?: string;
 };
 
 export const HomeMain = styled.main`

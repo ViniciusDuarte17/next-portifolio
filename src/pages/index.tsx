@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import { Experience } from "../components/Experience";
 import { About } from "../components/About";
 import { Portfolio } from "../components/Portfolio";
+import { Contact } from "../components/Contact";
 
 const Home: NextPage = () => {
   const [screen, setScreen] = useState<number>(0)
@@ -123,6 +124,8 @@ const Home: NextPage = () => {
       <About screen={screen}/>
 
       <Portfolio screen={screen} />
+
+      <Contact screen={screen} />
       
     </S.HomeMain>
   );

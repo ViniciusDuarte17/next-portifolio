@@ -22,46 +22,31 @@ export const About = ({ screen }: Props) => {
         {screen > 814 ? (
           <>
             <p>
-              👋 Olá! Meu nome é Vinicius Duarte Passo, e sou um profissional de
-              programação apaixonado e dedicado. Prazer!
+              👋 Olá! Meu nome é Vinicius Duarte Passo, e sou desenvolvedor
+              web full-stack.
             </p>
             <p>
-              👨‍💻 Com experiência em JavaScript, TypeScript, React, Vue.js,
-              Node.js, MySQL e MongoDB. Posso oferecer soluções inovadoras e
-              eficazes para o seu projeto. Como desenvolvedor, acredito que a
-              melhor maneira de criar aplicativos e sistemas é colocando os
-              usuários em primeiro lugar.
+              👨‍💻 Atuamente estou trabalhando como desenvolvedor
+                  front-end na Ng7 consultoria!
             </p>
             <p>
-              🎓 Por isso, sempre busco entender as necessidades do público-alvo
-              e criar interfaces de usuário intuitivas e fáceis de usar. Além
-              disso, sou um entusiasta de tecnologia e estou sempre procurando
-              aprender mais sobre novas ferramentas e tendências em programação.
-              Estou constantemente me atualizando para garantir que meus
-              projetos estejam sempre na vanguarda do mercado.
+              🎓 Sou formado no Labenu, onde concluí um programa de mais de 1000 horas de experiência
+              prática em desenvolvimento Full-stack. Durante o curso, adquiri habilidades em HTML, CSS,
+              JavaScript, React, Styled-Components, React Hooks, REST, Api Restful, HTTP, Jest, Node.JS,
+              Knex, TypeScript, MySQL, AWS, SQL, Git, Github, Firebase, Testes unitários e UI Design.
             </p>
             <p>
-              💡 Se você procura um profissional experiente, apaixonado e
-              atualizado em programação, não hesite em entrar em contato comigo.
-              Vamos criar algo incrível juntos!
+              💡 Tenho um interesse constante em aprender coisas novas!
             </p>
           </>
         ) : (
           <p>
-            Olá! Meu nome é Vinicius Duarte Passo, e sou um profissional de
-            programação apaixonado e dedicado. Com experiência em JavaScript,
-            TypeScript, React, Vue.js, Node.js, MySQL e MongoDB. Posso oferecer
-            soluções inovadoras e eficazes para o seu projeto. Como
-            desenvolvedor, acredito que a melhor maneira de criar aplicativos e
-            sistemas é colocando os usuários em primeiro lugar. Por isso, sempre
-            busco entender as necessidades do público-alvo e criar interfaces de
-            usuário intuitivas e fáceis de usar. Além disso, sou um entusiasta
-            de tecnologia e estou sempre procurando aprender mais sobre novas
-            ferramentas e tendências em programação. Estou constantemente me
-            atualizando para garantir que meus projetos estejam sempre na
-            vanguarda do mercado. Se você procura um profissional experiente,
-            apaixonado e atualizado em programação, não hesite em entrar em
-            contato comigo. Vamos criar algo incrível juntos!
+             Olá! Sou Vinicius Duarte Passo, desenvolvedor web full-stack atualmente trabalhando como 
+             desenvolvedor front-end na Ng7 Consultoria. Concluí um programa abrangente de desenvolvimento
+              Full-stack na Labenu, com mais de 1000 horas de experiência prática. Adquiri habilidades 
+              em HTML, CSS, JavaScript, React, Styled-Components, React Hooks, REST, Api Restful, HTTP, Jest,
+               Node.JS, Knex, TypeScript, MySQL, AWS, SQL, Git, Github, Firebase, Testes unitários e UI Design.
+                Estou sempre em busca de novos conhecimentos e aprendizados!
           </p>
         )}
         <p>🚀 Tentando ser um pouquinho melhor do que ontem todos dias.</p>
