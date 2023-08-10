@@ -12,22 +12,22 @@ export const Experience = ({ screen }: Props) => {
         <S.InformationSection colorBorder={"rgba(123, 74, 226, 0.5)"}>
           <S.ProfessionalInformation>
             <Image width={72} height={64} src={"CodeIcon.svg"} alt="icon" />
-            <p>3 anos como</p>
-            <h2>Programador</h2>
+            <p>2 anos estudando</p>
+            <h2>Programação</h2>
           </S.ProfessionalInformation>
         </S.InformationSection>
         <S.InformationSection background="rgba(123, 74, 226, 0.1)">
           <S.ProfessionalInformation>
             <Image width={72} height={64} src={"ProjectsIcon.svg"} alt="icon" />
-            <p>7 anos como</p>
-            <h2>Trabalhos</h2>
+            <p>3 meses como</p>
+            <h2>Front-end CLT</h2>
           </S.ProfessionalInformation>
         </S.InformationSection>
         <S.InformationSection colorBorder={"rgba(123, 74, 226, 0.5)"}>
           <S.ProfessionalInformation>
             <Image width={72} height={64} src={"DesignIcon.svg"} alt="icon" />
-            <p>4 anos como</p>
-            <h2>Designer</h2>
+            <p>+ 6 meses de</p>
+            <h2>Freelance</h2>
           </S.ProfessionalInformation>
         </S.InformationSection>
       </S.SectionRow>
