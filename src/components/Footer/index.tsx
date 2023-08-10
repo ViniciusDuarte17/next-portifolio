@@ -6,11 +6,14 @@ interface Props {
 }
 
 export const Footer = ({ screen }: Props) => {
+    const dataAtual = new Date()
+    const anoAtual = dataAtual.getFullYear()
+    
   return (
     <S.ContainerFooter>
       <S.Direction>
         <S.GmailStyled>
-          <p>testealgumacoisa@gmail.com</p>
+          <p>Copyright © Vinicius Duarte · {anoAtual}</p>
         </S.GmailStyled>
         <div>
             <SocialNetwork screen={screen}/>
