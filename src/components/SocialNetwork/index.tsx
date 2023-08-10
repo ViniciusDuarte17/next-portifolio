@@ -12,7 +12,7 @@ export const SocialNetwork = ({ screen }: Props) => {
         <S.ContentListIcons screen={screen}>
              <ul>
               <li>
-                <Link href={"/"}>
+                <Link href={"https://www.linkedin.com/in/vinicius-duarte-p/"} target="_blank">
                   <Image
                     width={32}
                     height={32}
@@ -22,7 +22,7 @@ export const SocialNetwork = ({ screen }: Props) => {
                 </Link>
               </li>
               <li>
-                <Link href={"/"}>
+                <Link href={"https://github.com/ViniciusDuarte17"} target="_blank">
                   <Image
                     width={32}
                     height={32}
@@ -32,7 +32,7 @@ export const SocialNetwork = ({ screen }: Props) => {
                 </Link>
               </li>
               <li>
-                <Link href={"/"}>
+                <Link href={"https://twitter.com/Vinicius_benj"} target="_blank">
                   <Image
                     width={32}
                     height={32}

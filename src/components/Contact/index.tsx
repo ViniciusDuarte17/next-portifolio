@@ -30,7 +30,7 @@ export const Contact = () => {
                 alt="icons download"
               />
 
-              <SHome.LinkToWhatsapp href={"/"}>
+              <SHome.LinkToWhatsapp href={"https://contate.me/dev-vinicius"} target="_blank">
                 Vamos conversar
               </SHome.LinkToWhatsapp>
             </SHome.JoinLogoWhatsLink>

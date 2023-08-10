@@ -82,7 +82,7 @@ const Home: NextPage = () => {
           <S.JoinLogoWhatsLink>
             <Image width={24} height={24} src="WhatsappLogo.svg" alt="icons download" />
 
-            <S.LinkToWhatsapp href={'/'}>
+            <S.LinkToWhatsapp href={'https://contate.me/dev-vinicius'} target="_blank">
               Vamos conversar
             </S.LinkToWhatsapp>
           </S.JoinLogoWhatsLink>
