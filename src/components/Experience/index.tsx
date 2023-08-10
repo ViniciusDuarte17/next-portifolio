@@ -19,14 +19,14 @@ export const Experience = ({ screen }: Props) => {
         <S.InformationSection background="rgba(123, 74, 226, 0.1)">
           <S.ProfessionalInformation>
             <Image width={72} height={64} src={"ProjectsIcon.svg"} alt="icon" />
-            <p>3 meses como</p>
-            <h2>Front-end CLT</h2>
+            <p>experiência como</p>
+            <h2>Front End</h2>
           </S.ProfessionalInformation>
         </S.InformationSection>
         <S.InformationSection colorBorder={"rgba(123, 74, 226, 0.5)"}>
           <S.ProfessionalInformation>
             <Image width={72} height={64} src={"DesignIcon.svg"} alt="icon" />
-            <p>+ 6 meses de</p>
+            <p> 6 meses de</p>
             <h2>Freelance</h2>
           </S.ProfessionalInformation>
         </S.InformationSection>
