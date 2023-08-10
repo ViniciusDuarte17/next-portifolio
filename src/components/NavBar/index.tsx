@@ -1,5 +1,6 @@
 import * as S from "./styled";
 
+
 type Props = {
   screen: number;
   flexDirection?: string;
@@ -22,7 +23,7 @@ export const NavBar = ({ screen, flexDirection }: Props) => {
         </li>
 
         <S.Li>
-          <S.CustomStyleLink href={"#Contact"}>Contato</S.CustomStyleLink>
+          <S.CustomStyleLink href={"#Contact"} scroll={false} >Contato</S.CustomStyleLink>
         </S.Li>
       </S.Ul>
     </nav>

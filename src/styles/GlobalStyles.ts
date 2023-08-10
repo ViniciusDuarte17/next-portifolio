@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
+    /* scroll-behavior: smooth; */
   }
 
 `;

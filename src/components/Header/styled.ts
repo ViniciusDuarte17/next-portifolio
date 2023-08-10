@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 
 export const ContainerHeader = styled.header`
+    /* position: fixed; */
     width: 85%;
     height: 48px;
     background-color: rgba(123, 74, 226, 0.1);

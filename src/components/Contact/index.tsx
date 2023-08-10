@@ -10,7 +10,7 @@ interface Props {
 export const Contact = () => {
   
   return (
-    <S.Container>
+    <S.Container id="Contact">
       <S.StyledContact>
         <h2>📬 Contatos!</h2>
       </S.StyledContact>

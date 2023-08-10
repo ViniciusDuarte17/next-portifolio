@@ -25,6 +25,7 @@ export const CustomStyleLink = styled(Link)`
     font-size: 18px;
     font-weight: normal;
     letter-spacing: 0;
+    animation-duration: 3s;
 
     &:focus, :hover {
         color:#7B4AE2;

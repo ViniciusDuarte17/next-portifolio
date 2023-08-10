@@ -1,8 +1,6 @@
 import type { NextPage } from "next";
-
 import * as S from "../styles/Home";
 import Header from "../components/Header";
-import Link from "next/link";
 import Image from "next/image";
 import CustomButton from "../components/Button";
 import { useEffect, useState } from "react";
@@ -35,7 +33,7 @@ const Home: NextPage = () => {
     <S.HomeMain>
       <Header screen={screen} />
 
-      <S.ContainerSection>
+      <S.ContainerSection id="Home">
         <S.ContentPresentation>
           {/* Seção 1 => Saudações */}
           <S.Information>
