@@ -10,6 +10,8 @@ import { Experience } from "../components/Experience";
 import { About } from "../components/About";
 import { Portfolio } from "../components/Portfolio";
 import { Contact } from "../components/Contact";
+import { Footer } from "../components/Footer";
+import { SocialNetwork } from "../components/SocialNetwork";
 
 const Home: NextPage = () => {
   const [screen, setScreen] = useState<number>(0)
@@ -49,40 +51,8 @@ const Home: NextPage = () => {
             <h6>Full-stack developer- UI designer</h6>
           </S.ContentTextFrontEnd>
 
-          <S.ContentListIcons screen={screen}>
-            <ul>
-              <li>
-                <Link href={"/"}>
-                  <Image
-                    width={32}
-                    height={32}
-                    src={"/In.svg"}
-                    alt={"svg linkedin"}
-                  />
-                </Link>
-              </li>
-              <li>
-                <Link href={"/"}>
-                  <Image
-                    width={32}
-                    height={32}
-                    src={"/Shape.svg"}
-                    alt={"svg GitHub"}
-                  />
-                </Link>
-              </li>
-              <li>
-                <Link href={"/"}>
-                  <Image
-                    width={32}
-                    height={32}
-                    src={"/twitter.svg"}
-                    alt={"svg twitter2"}
-                  />
-                </Link>
-              </li>
-            </ul>
-          </S.ContentListIcons>
+          <SocialNetwork screen={screen} />
+
         </S.ContentPresentation>
      {/* Seção 2 => Avatar  */}
         <S.SectionToAvatar>
@@ -125,7 +95,9 @@ const Home: NextPage = () => {
 
       <Portfolio screen={screen} />
 
-      <Contact screen={screen} />
+      <Contact />
+
+      <Footer screen={screen}/>
       
     </S.HomeMain>
   );

@@ -7,8 +7,8 @@ interface Props {
   screen: number;
 }
 
-export const Contact = ({ screen }: Props) => {
-  console.log("screen", screen);
+export const Contact = () => {
+  
   return (
     <S.Container>
       <S.StyledContact>

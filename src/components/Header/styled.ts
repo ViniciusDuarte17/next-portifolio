@@ -2,11 +2,9 @@ import styled from "styled-components";
 
 
 export const ContainerHeader = styled.header`
-    /* position: fixed; */
     width: 85%;
     height: 48px;
     background-color: rgba(123, 74, 226, 0.1);
-    /* background-color:black; */
     border-radius: 8px;
     color: #fff;
     display: flex;
@@ -14,11 +12,9 @@ export const ContainerHeader = styled.header`
     align-items: center;
     padding-left: 8px;
     margin-top: 1.5rem;
-    /* z-index: 4; */
 `
 
 export const PositionButton = styled.div`
-
     position: absolute;
     right: 12%;
 `
