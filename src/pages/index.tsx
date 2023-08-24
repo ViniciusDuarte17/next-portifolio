@@ -10,6 +10,8 @@ import { Portfolio } from "../components/Portfolio";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
 import { SocialNetwork } from "../components/SocialNetwork";
+import { saveAs } from 'file-saver';
+// import CV from '../assets/ViniciusDuarte.pdf'
 
 const Home: NextPage = () => {
   const [screen, setScreen] = useState<number>(0)
@@ -28,6 +30,15 @@ const Home: NextPage = () => {
       observer.unobserve(document.body);
     };
   }, []);
+
+  const onGetCv = () => {
+
+    fetch('CV').then((response) => {
+      response.blob().then((blob) => {
+        saveAs(blob, "cvViniciusDuarte.pdf");
+      });
+    });
+  };
 
   return (
     <S.HomeMain>
@@ -66,7 +77,7 @@ const Home: NextPage = () => {
         <S.SectionContact>
           {/* Seção 3 => Informações do CV e botão para falar comigo no whats */}
           <S.JoinImgToText>
-            <CustomButton onClick={() => console.log('clicou')} >
+            <CustomButton onClick={() => onGetCv()} >
               <S.SpanButtonCV>
                 Baixar CV
               </S.SpanButtonCV>
